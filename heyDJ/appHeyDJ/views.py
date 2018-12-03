@@ -7,7 +7,7 @@ def index(request):
     return HttpResponse("Hello world! This will be the main page "
         + "of the app.")
 
-#Test view - Retrieve playlist info based on id (GET)
+#Test view - Retrieve playlist info baseSd on id (GET)
 def getPLInfo(request, playlist_id):
         allPlaylists = Playlist.objects.all()   #Can ignore this error for now, still works...
         plNames = ', '.join([p.pl_name for p in allPlaylists])
