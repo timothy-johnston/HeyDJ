@@ -4,8 +4,7 @@ from .models import Playlist
 
 #Test view - Hello World
 def index(request):
-    return HttpResponse("Hello world! This will be the main page "
-        + "of the app.")
+    return HttpResponse("Hello World!")
 
 #Test view - Retrieve playlist info based on id (GET)
 def getPLInfo(request, playlist_id):
